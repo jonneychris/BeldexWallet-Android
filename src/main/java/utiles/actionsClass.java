@@ -19,13 +19,10 @@ import io.appium.java_client.android.AndroidDriver;
 
 public class actionsClass {
 	AndroidDriver driver;
-	public actionsClass(AndroidDriver driver) {
-		
-		this.driver=driver;
-		
-	}
-
 	
+	public actionsClass(AndroidDriver driver) {
+			this.driver=driver;
+	}
 	
 	public void scrollgesture_Using_text(String point) {
 		driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\""+point+"\"));"));	

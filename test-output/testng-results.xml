@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-06-11T18:02:34 IST" name="Default suite" finished-at="2026-06-11T18:02:58 IST" duration-ms="23966">
+    <groups>
+      <group name="Regression">
+        <method signature="openingScreen.To_validate_OpeningScreen_createWallet_RespondToTouch()[pri:1, instance:Beldex.Wallet.openingScreen@60db1c0e]" name="To_validate_OpeningScreen_createWallet_RespondToTouch" class="Beldex.Wallet.openingScreen"/>
+        <method signature="openingScreen.To_validate_OpeningScreen_UseExistingWallet_RespondToTouch()[pri:2, instance:Beldex.Wallet.openingScreen@60db1c0e]" name="To_validate_OpeningScreen_UseExistingWallet_RespondToTouch" class="Beldex.Wallet.openingScreen"/>
+      </group> <!-- Regression -->
+      <group name="Smoke">
+        <method signature="openingScreen.To_validate_OpeningScreen_createWallet_RespondToTouch()[pri:1, instance:Beldex.Wallet.openingScreen@60db1c0e]" name="To_validate_OpeningScreen_createWallet_RespondToTouch" class="Beldex.Wallet.openingScreen"/>
+        <method signature="openingScreen.To_validate_OpeningScreen_UseExistingWallet_RespondToTouch()[pri:2, instance:Beldex.Wallet.openingScreen@60db1c0e]" name="To_validate_OpeningScreen_UseExistingWallet_RespondToTouch" class="Beldex.Wallet.openingScreen"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2026-06-11T18:02:34 IST" name="Default test" finished-at="2026-06-11T18:02:58 IST" duration-ms="23966">
+      <class name="Beldex.Wallet.openingScreen">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Beldex.Wallet.openingScreen@60db1c0e]" started-at="2026-06-11T18:02:34 IST" name="setUp" finished-at="2026-06-11T18:02:51 IST" duration-ms="17046" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="To_validate_OpeningScreen_createWallet_RespondToTouch()[pri:1, instance:Beldex.Wallet.openingScreen@60db1c0e]" started-at="2026-06-11T18:02:51 IST" name="To_validate_OpeningScreen_createWallet_RespondToTouch" finished-at="2026-06-11T18:02:53 IST" duration-ms="1762" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- To_validate_OpeningScreen_createWallet_RespondToTouch -->
+        <test-method signature="To_validate_OpeningScreen_UseExistingWallet_RespondToTouch()[pri:2, instance:Beldex.Wallet.openingScreen@60db1c0e]" started-at="2026-06-11T18:02:53 IST" name="To_validate_OpeningScreen_UseExistingWallet_RespondToTouch" finished-at="2026-06-11T18:02:55 IST" duration-ms="1846" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- To_validate_OpeningScreen_UseExistingWallet_RespondToTouch -->
+        <test-method signature="To_Validate_switching_4digitpin_to_6digitpin()[pri:3, instance:Beldex.Wallet.openingScreen@60db1c0e]" started-at="2026-06-11T18:02:55 IST" name="To_Validate_switching_4digitpin_to_6digitpin" finished-at="2026-06-11T18:02:56 IST" duration-ms="1463" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- To_Validate_switching_4digitpin_to_6digitpin -->
+        <test-method signature="To_Validate_switching_6digitpin_to_4digitpin()[pri:4, instance:Beldex.Wallet.openingScreen@60db1c0e]" started-at="2026-06-11T18:02:56 IST" name="To_Validate_switching_6digitpin_to_4digitpin" finished-at="2026-06-11T18:02:57 IST" duration-ms="697" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- To_Validate_switching_6digitpin_to_4digitpin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Beldex.Wallet.openingScreen@60db1c0e]" started-at="2026-06-11T18:02:57 IST" name="tearDown" finished-at="2026-06-11T18:02:58 IST" duration-ms="1106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Beldex.Wallet.openingScreen -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

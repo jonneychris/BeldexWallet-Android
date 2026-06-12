@@ -1,5 +1,7 @@
 package pageObjectModel;
 
+import java.util.Iterator;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
@@ -43,6 +45,11 @@ public class setupPinScreen extends actionsClass{
 	@AndroidFindBy(accessibility = "Re-Enter your PIN")
 	private WebElement reEnterYourPinScreen;
 		
+	@AndroidFindBy(accessibility = "PIN is incorrect")
+	private WebElement pinIncorrectPopup;
+	
+	@AndroidFindBy(accessibility = "Ok")
+	private WebElement btnOk;
 	
 	public String setupPINScreen () {
 		return setupPinScreen.getText();
@@ -56,12 +63,12 @@ public class setupPinScreen extends actionsClass{
 		switchTo4digit.click();
 	}
  
-	public String enterYourPinScreen () {
-		return enterYourPinScreen.getText();
+	public WebElement enterYourPinScreen () {
+		return enterYourPinScreen;
 	}
 	
-	public String reEnterYourPinScreen () {
-		return reEnterYourPinScreen.getText();
+	public WebElement reEnterYourPinScreen () {
+		return reEnterYourPinScreen;
 	}
 
 	public WebElement Element4digitPin () {
@@ -71,4 +78,43 @@ public class setupPinScreen extends actionsClass{
 	public WebElement Element6digitPin () {
 		return switchTo6digit;
 	}
+	
+	public void Enter1 () {
+		for (int i=0;i<3;i++) {
+			btn1.click();
+		}
+	}
+	
+	public void Enter2 () {
+		for (int i=0;i<3;i++) {
+			btn2.click();
+		}
+	}
+	
+	public void deleteValue () {
+		for (int i=0;i<3;i++) {
+			btnCancel.click();
+		}	
+	}
+	
+	public void enterFourdigitPin () {
+		for (int i=0;i<=3;i++) {
+			btn1.click();
+		}
+	}
+	
+		public void enterSixdigitPin () {
+			for (int i=0;i<=5;i++) {
+				btn1.click();
+			}
+	}
+	
+	public void clickOk () {
+		btnOk.click();
+	}
+	
+	public WebElement PinInCorrect () {
+		return pinIncorrectPopup;
+	}
+	
 }

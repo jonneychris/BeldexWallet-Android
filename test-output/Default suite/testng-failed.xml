@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Beldex.Wallet.openingScreen">
+      <class name="Beldex.Wallet.CreateWalletFlow">
         <methods>
           <include name="setUp"/>
-          <include name="To_validate_OpeningScreen_createWallet_RespondToTouch"/>
           <include name="tearDown"/>
-          <include name="To_validate_OpeningScreen_UseExistingWallet_RespondToTouch"/>
+          <include name="To_Validate_valid_Pin_in_Both_EnterPIN_and_ReEnterPIN_using_4digit"/>
+          <include name="To_Validate_whether_enter_values_cleared_while_switching_pin_length"/>
         </methods>
-      </class> <!-- Beldex.Wallet.openingScreen -->
+      </class> <!-- Beldex.Wallet.CreateWalletFlow -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -51,6 +51,9 @@ public class setupPinScreen extends actionsClass{
 	@AndroidFindBy(accessibility = "Ok")
 	private WebElement btnOk;
 	
+	@AndroidFindBy(accessibility = "Your PIN has been set up \\nsuccessfully!")
+	private WebElement pinSuccessPopup;
+	
 	public String setupPINScreen () {
 		return setupPinScreen.getText();
 	}
@@ -116,5 +119,46 @@ public class setupPinScreen extends actionsClass{
 	public WebElement PinInCorrect () {
 		return pinIncorrectPopup;
 	}
+	
+	public void setValid4digitPin () {
+		for( int i=0;i<4;i++) {
+			btn1.click();
+		}
+		for (int i =0;i< 4;i++) {
+            btn1.click();			
+		}
+	}
+	
+	public void setInValid4digitPin () {
+		for( int i=0;i<4;i++) {
+			btn1.click();
+		}
+		for (int i =0;i< 4;i++) {
+            btn2.click();			
+		}
+	}
+	
+	public void setValid6digitPin () {
+		for( int i=0;i<6;i++) {
+			btn1.click();
+		}
+		for (int i =0;i< 6;i++) {
+            btn1.click();			
+		}
+	}
+	
+	public void setInValid6digitPin () {
+		for( int i=0;i<6;i++) {
+			btn1.click();
+		}
+		for (int i =0;i< 6;i++) {
+            btn2.click();			
+		}
+	}
+	
+	public WebElement pinSuccessPopup () {
+		return pinSuccessPopup;
+	}
+	
 	
 }
